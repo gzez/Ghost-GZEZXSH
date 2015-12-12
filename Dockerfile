@@ -1,19 +1,3 @@
-from ubuntu
+FROM daocloud.io/golfen/dao-ghost:master-8c9706f
 
-run apt-get -y  update
-
-run apt-get -y install node-gyp nodejs npm node
-
-run mkdir /app
-
-add . /app
-
-workdir /app
-
-expose 80
-
-run chmod a+x /app/start.sh
-
-run npm install
-
-cmd ['/app/start.sh']
+ADD Code-Hub.tar.gz /usr/src/ghost/content/themes/
