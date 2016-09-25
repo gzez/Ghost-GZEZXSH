@@ -1,4 +1,4 @@
-FROM daocloud.io/library/ghost:0.11.0
+FROM daocloud.io/golfen/dao-ghost:master-8c9706f
 
 MAINTAINER FYX "fyx@gzezxsh.xyz"
 
